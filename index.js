@@ -1,12 +1,14 @@
 
 const num=[3,5,7,9,10]
-function doubleNumber(){
+const number=doubleNumber(num)
 
-    for (let num2 of num)
-    {console.log(num2*2)}
-
+function doubleNumber(arr){
+const doubleNumber=[]
+    for (let number of arr)
+    {doubleNumber.push(number*2)}
+return doubleNumber;
 }
-doubleNumber()
+console.log(number)
 const userName={name:'Hana',age:19,gender:'female'}
 
 function info(){
@@ -18,8 +20,18 @@ info()
 
 const word="student"
 function spelling(){
+    let counter = 1
     for(let i in word){
-        console.log(word[i])
-    }
+       
+        setTimeout(()=>{
+            console.log(word[i])
+        },counter*1000)
+
+        counter++
+ } 
+
+
 }
+
+// setTimeout(spelling,1000)
 spelling()
